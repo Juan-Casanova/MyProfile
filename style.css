@@ -32,6 +32,10 @@
     height: 150px;
 }
 
+.container-skills {
+    margin-bottom: 50px;
+}
+
 .container-flex-skills {
     display: flex;
 }
@@ -42,5 +46,70 @@
 }
 
 .container-elementor {
-    display: flex;
+    
+}
+
+.contenedor-anim {
+    width: 70%;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 15%;
+}
+
+.barra {
+    width: 0;
+    height: 100%;
+    background-color: turquoise;
+}
+
+.texto {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+    width: 12.5em;
+    height: 100%;
+    text-align: center;
+    color: black;
+    mix-blend-mode: multiply;
+}
+
+.texto:after {
+    content: '0%';
+}
+
+/*Animaciones*/
+
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes porcentaje {
+    0% {
+        content: '0%';
+    }
+    25% {
+        content: '25%';
+    }
+    50% {
+        content: '50%';
+    }
+    75% {
+        content: '75%';
+    }
+    100% {
+        content: '100%';
+    }
+}
+
+.barra {
+    animation: progreso 5s linear;
+}
+
+.texto:after {
+    animation: porcentaje 5s linear;
 }
