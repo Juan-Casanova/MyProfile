@@ -70,14 +70,20 @@
 }
 
 .container-elementor {
-    
+    margin-top: 3%;
+}
+
+.margin-title-botton {
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .progress-bar {
     background-color: #1a1a1a;
-    height: 25px;
-    padding: 5px;
-    width: 350px;
+    height: 2%px;
+    padding: 5px 0;
+    width: 70%;
+    margin-left: 15%;
     border-radius: 5px;
     box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
 }
@@ -89,6 +95,7 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
     transition: width .4s ease-in-out;
     background-color: #ccc;
+    color: white;
 }
 
 .filled-in-50 {
@@ -122,6 +129,21 @@
 .filled-web span{
     background-color: #7F00F0;
     background-image: linear-gradient(top, #7F00F0, #5805A2);
+}
+
+.filled-videogame span{
+    background-color: #0AE14B;
+    background-image: linear-gradient(top, #0AE14B, #029E31);
+}
+
+.filled-diseño span{
+    background-color: #F47A07;
+    background-image: linear-gradient(top, #F47A07, #D76800);
+}
+
+.filled-general span{
+    background-color: #03B7FF;
+    background-image: linear-gradient(top, #03B7FF, #0077A7);
 }
 
 /**** STRIPES ****/
