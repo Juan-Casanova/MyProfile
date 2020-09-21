@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+
 * {
     margin: 0;
+    font-family: "Poller One";
 }
 
 .nav-bar {
@@ -32,8 +35,21 @@
     height: 150px;
 }
 
+/* .container-image-start {
+    height: 30%;
+} */
+
+/* .container-images {
+    height: 30%;
+} */
+
+.image-main {
+    height: 675px;
+}
+
 .container-skills {
     margin-bottom: 50px;
+    margin-top: 5%;
 }
 
 .container-flex-skills {
@@ -45,71 +61,120 @@
     text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 5%;
+}
+
 .container-elementor {
     
 }
 
-.contenedor-anim {
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 25px;
+    padding: 5px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+    background-color: #ccc;
+}
+
+.filled-in-50 {
+    width: 50%;
+}
+
+.filled-in-60 {
+    width: 60%;
+}
+
+.filled-in-70 {
     width: 70%;
-    height: 30px;
-    border: 2px solid black;
-    margin-left: 15%;
 }
 
-.barra {
-    width: 0;
-    height: 100%;
-    background-color: turquoise;
+.filled-in-75 {
+    width: 75%;
 }
 
-.texto {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 2em;
-    width: 12.5em;
-    height: 100%;
-    text-align: center;
-    color: black;
-    mix-blend-mode: multiply;
+.filled-in-80 {
+    width: 80%;
 }
 
-.texto:after {
-    content: '0%';
+.filled-in-85 {
+    width: 85%;
 }
 
-/*Animaciones*/
+.filled-in-90 {
+    width: 90%;
+}
 
-@keyframes progreso {
+.filled-web span{
+    background-color: #7F00F0;
+    background-image: linear-gradient(top, #7F00F0, #5805A2);
+}
+
+/**** STRIPES ****/
+.stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+      transparent 75%, transparent);            
+  
+    animation: animate-stripes 3s linear infinite;             
+  }
+
+@keyframes animate-stripes {
     0% {
-        width: 0;
-    }
+        background-position: 0 0;
+    } 
     100% {
-        width: 80%;
+        background-position: 60px 0;
     }
 }
 
-@keyframes porcentaje {
-    0% {
-        content: '0%';
-    }
-    25% {
-        content: '25%';
-    }
-    50% {
-        content: '50%';
-    }
-    75% {
-        content: '75%';
-    }
-    100% {
-        content: '100%';
-    }
-}
-
-.barra {
-    animation: progreso 5s linear;
-}
-
-.texto:after {
-    animation: porcentaje 5s linear;
-}
+/**** SHINE ****/
+.shine span {
+    position: relative;
+  }
+  
+  .shine span::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 3px;
+    animation: animate-shine 2s ease-out infinite;             
+  }
+  
+  @keyframes animate-shine {
+    0% {opacity: 0; width: 0;}
+    50% {opacity: .5;}
+    100% {opacity: 0; width: 95%;}
+  }
+  
+  /**** GLOW ****/
+  .glow span {
+    box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;    
+    animation: animate-glow 1s ease-out infinite;          
+  }
+  
+  @keyframes animate-glow {
+    0% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;} 
+    50% { box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;} 
+    100% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+  }
