@@ -18,12 +18,29 @@
     margin-right: 5%;
 }
 
-.container-image-start {
-    
-}
-
 .image-main {
     max-width: 100%;
     width: 100%;
     margin-top: 3%;
+}
+
+.image-footer-image-main {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+}
+
+.container-flex-skills {
+    display: flex;
+}
+
+.mid-container {
+    width: 50%;
+    text-align: center;
+}
+
+.container-elementor {
+    display: flex;
 }
