@@ -12,6 +12,7 @@
     width: 100%;
     background-color: #005660;
     justify-content: flex-end;
+    z-index: 99;
 }
 
 .nav-bar a {
@@ -209,6 +210,58 @@ ul.slider li:first-child {
 ul.slider li:target {
     opacity: 1;
 }
+
+/**************Seccion de contacto***************/
+
+.container-contact {
+    margin-bottom: 50px;
+}
+
+.container-content-services {
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+.element {
+    width: 20%;
+    text-align: center;
+    border-radius: 15px;
+    /*border: solid 2px;*/
+}
+
+.space-padding-title {
+    padding: 5%;
+    color: white;
+}
+
+.link-contacto {
+    color:white;
+    display: inline-block;
+    padding: 5%;
+    padding-bottom: 10%;
+}
+
+.filled-in-whatsapp {
+    background-color: #00BB2D;
+}
+
+.filled-in-phone {
+    background-color: #009EDE;
+}
+
+.filled-map {
+    background-color: #E5D10D;
+}
+
+.size-image-contact {
+    width: 20%;
+    margin-top: 10px;
+}
+
+
+
+
+
 
 
 

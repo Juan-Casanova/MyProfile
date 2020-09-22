@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - JUAN CASANOVA</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/Icono.png">
 </head>
 <body>
     
@@ -13,8 +14,8 @@
     <div class="nav-bar">
         <a href="#home">HOME</a>
         <a href="#my-skills">HABILIDADES</a>
-        <a href="">TRABAJOS</a>
-        <a href="">CONTACTO</a>
+        <a href="#my-works">TRABAJOS</a>
+        <a href="#my-contact">CONTACTO</a>
     </div>
 
     <!-- PRIMER IMAGEN DE LA PAGINA -->
@@ -130,7 +131,7 @@
 
     <!-- SECCION DE LOS TRABAJOS REALIZADOS -->
 
-    <section class="container-works">
+    <section id="my-works" class="container-works">
         <h2 class="text-center">Mis trabajos realizados</h2>
         <div class="container-slider">
             <ul class="slider">
@@ -159,7 +160,35 @@
         </div>
     </section>
 
-   
+   <!-- SECCION DE CONTACTO -->
+   <section id="my-contact" class="container-contact">
+    <h2 class="text-center">CONTACTO</h2>
+    <div class="container-content-services">
+        <div class="element filled-in-whatsapp">
+            <img src="./Images/whats.png" alt="" class="size-image-contact">
+            <h4 class="space-padding-title">
+                Whatsapp
+            </h4>
+            <a class="link-contacto" href="https://wa.link/5k9490" target="_blank">
+                Enviame un whats
+            </a>
+        </div>
+        <div class="element filled-in-phone">
+            <img src="./Images/Telefono.png" alt="" class="size-image-contact">
+            <h4 class="space-padding-title">
+                Telefono
+            </h4>
+            <a class="link-contacto"  href="tel +4422855608">Llamame 442-2855-608</a>
+        </div>
+        <div class="element filled-map">
+            <img src="./Images/Maps.png" alt="" class="size-image-contact">
+            <h4 class="space-padding-title">
+                Ubicación
+            </h4>
+            <a class="link-contacto" href="https://goo.gl/maps/SrjNGiR2RmKzMu3o7" target="_blank">Visitame</a>
+        </div>
+    </div>
+   </section>
 
 </body>
 </html>
