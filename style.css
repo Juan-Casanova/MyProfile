@@ -5,14 +5,15 @@
     font-family: "Poller One";
 }
 
+
+/****************NAVBAR***************************/
+
 .nav-bar {
     position: fixed;
-    display: flex;
-    height: 8%;
-    width: 100%;
-    background-color: rgba(0, 166, 175, 1);
-    justify-content: flex-end;
+    display: flex;    
+    background-color: rgba(0, 166, 175, 1);    
     z-index: 99;
+    width: 100%;
 }
 
 .nav-bar a {
@@ -22,28 +23,30 @@
     margin-right: 5%;
 }
 
+
+/*********Primera imagen*********/
+
+.container-image-start {
+    height: auto;
+}
+
 .image-main {
-    max-width: 100%;
     width: 100%;
     margin-top: 3%;
 }
 
 .image-footer-image-main {
     position: absolute;
-    left: 0;
-    width: 100%;
     bottom: 0;
+    left: 0;
+    right: 0;
     height: 150px;
+    width: 100%;
 }
 
 
 
 /*************SECCION DE SERVICIOS**********/
-
-
-.image-main {
-    height: 675px;
-}
 
 .container-skills {
     margin-bottom: 150px;
@@ -287,6 +290,60 @@ ul.slider li:target {
 }
 .text-autor {
     color: white;
+    text-align: center;
+}
+
+
+/*************generales*************/
+.text-white {
+    color: white;
+}
+
+
+
+/*******************************************************************/
+/******************************************************************/
+/******************************************************************/
+/*********************RESPONSIVE************************************/
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+
+/****************Pantallas extra chicas*************/
+
+@media (max-width: 576px) {
+    .nav-bar-xs {
+        height: 25%;
+        flex-direction: column;
+    }
+}
+
+
+/*****************Pantallas chicas****************/
+
+@media (min-width: 576px) {
+    .nav-bar-s {
+        height: 25%;
+        flex-direction: column;
+    }
+}
+
+/*****************Pantallas tablet****************/
+
+@media (min-width: 768px) {
+    .nav-bar-md {
+        height: 5%;
+        justify-content: flex-end;
+    }
+}
+
+/*****************Pantalla lap*********************/
+
+@media (min-width: 992px) {
+    .nav-bar-lg {
+        height: 8%;        
+        justify-content: flex-end;
+    }
 }
 
 
