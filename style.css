@@ -32,17 +32,19 @@
 
 .image-main {
     width: 100%;
-    margin-top: 3%;
+}
+.container-image-footer-main {
+    width: 100%;   
+    height: 150px;
+    margin-top: -150px;
+    z-index: 98;
+}
+.image-footer-image-main {
+    width: 100%;
+    height: 150px;
 }
 
-.image-footer-image-main {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    width: 100%;
-}
+
 
 
 
@@ -55,10 +57,11 @@
 
 .container-flex-skills {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mid-container {
-    width: 50%;
+    
     text-align: center;
 }
 
@@ -243,12 +246,12 @@ ul.slider li:target {
     display: flex;
     margin-top: 2%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .element {
-    width: 20%;
+   
     text-align: center;
     border-radius: 15px;
-    /*border: solid 2px;*/
 }
 
 .space-padding-title {
@@ -316,6 +319,20 @@ ul.slider li:target {
         height: 25%;
         flex-direction: column;
     }
+    
+    .container-image-start-xs {
+        padding-top: 35%;
+    }
+    
+    .mid-container-xs {
+        width: 100%;
+    }
+
+    .element-xs {
+        width: 80%;
+        margin-top: 5%;
+    }
+    
 }
 
 
@@ -326,6 +343,20 @@ ul.slider li:target {
         height: 25%;
         flex-direction: column;
     }
+
+    .container-image-start-s {
+        padding-top: 28%;
+    }
+
+    .mid-container-s {
+        width: 100%;
+    }
+
+    .element-s {
+        width: 80%;
+        margin-top: 5%;
+    }
+
 }
 
 /*****************Pantallas tablet****************/
@@ -333,7 +364,19 @@ ul.slider li:target {
 @media (min-width: 768px) {
     .nav-bar-md {
         height: 5%;
+        flex-direction: row;
         justify-content: flex-end;
+    }
+    .container-image-start-md {
+        padding-top: 3%;
+    }
+
+    .mid-container-md {
+        width: 50%;
+    }
+
+    .element-md {
+        width: 20%;
     }
 }
 
@@ -341,8 +384,20 @@ ul.slider li:target {
 
 @media (min-width: 992px) {
     .nav-bar-lg {
-        height: 8%;        
+        height: 8%;
+        flex-direction: row;      
         justify-content: flex-end;
+    }
+    .container-image-start-lg {
+        padding-top: 3%;
+    }
+
+    .mid-container-lg {
+        width: 50%;
+    }
+
+    .element-lg {
+        width: 20%;
     }
 }
 
